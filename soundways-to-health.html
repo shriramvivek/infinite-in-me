@@ -24,7 +24,7 @@
   "name": "Soundways to Health",
   "description": "Sound healing, Access Bars and Compassion Key sessions with Shri Vivek in Mississauga, Ontario. In-studio and home-visit sessions.",
   "url": "https://www.soundwaystohealth.com/",
-  "email": "shrivivek@soundwaystohealth.com",
+  "email": "shriramvivek@gmail.com",
   "telephone": "+1-647-376-6687",
   "image": "https://www.soundwaystohealth.com/media/hero-bowl.jpg",
   "founder": { "@type": "Person", "name": "Shri Vivek", "jobTitle": "Sound Healing Practitioner, Certified Compassion Key Practitioner" },
@@ -152,7 +152,8 @@
 
   /* SERVICE SECTIONS */
   .svc{padding:120px 0;border-top:1px solid var(--line)}
-  .svc .split{align-items:start}
+  .svc .split{align-items:center}
+  .svc .split .media img{object-position:center center}
   .svc .split.flip .media{order:2}
   .svc h2{font-size:clamp(34px,4.6vw,54px);font-weight:400;margin-bottom:20px}
   .svc .sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:21px;color:var(--amber-lt);margin-bottom:22px;display:block}
@@ -251,11 +252,43 @@
     .split,.exp,.tgrid,.sci-grid,.where,.path-cards,.offers{grid-template-columns:1fr;gap:34px}
     .sci-grid,.exp{grid-template-columns:1fr 1fr}
     .svc .split.flip .media{order:0}
+    .svc .split{align-items:stretch}
+    .split .media{max-width:520px;margin:0 auto;width:100%}
     .nav-links{display:none}.menu-btn{display:block}
     .nav-links.open{display:flex;position:absolute;top:88px;left:0;right:0;flex-direction:column;background:rgba(8,11,22,.97);padding:24px 30px;gap:18px}
-    section{padding:86px 0}.band{height:80vh}.tcard .vid{max-height:none}
+    section{padding:86px 0}.svc{padding:80px 0}.band{height:80vh}.tcard .vid{max-height:none}
   }
-  @media(max-width:560px){.sci-grid{grid-template-columns:1fr}}
+  @media(max-width:560px){
+    body{font-size:16px;line-height:1.75}
+    .wrap{padding:0 20px}
+    .nav{height:72px}
+    .nav-links.open{top:72px}
+    .brand img{height:32px}
+    section{padding:64px 0}.svc{padding:60px 0}
+    .sec-head{margin-bottom:44px}
+    .sci-grid,.exp{grid-template-columns:1fr;gap:26px}
+    .split{gap:28px}
+    .split .media img{aspect-ratio:1/1}
+    .split .media .frame{inset:-10px}
+    .hero-inner{padding:96px 18px 0}
+    .hero h1{font-size:clamp(42px,12vw,64px)}
+    .hero p.lede{font-size:16px}
+    .eyebrow{font-size:10.5px;letter-spacing:.24em;margin-bottom:22px}
+    .hero-actions{flex-direction:column;align-items:stretch;max-width:320px;margin:0 auto}
+    .btn{padding:16px 26px;justify-content:center}
+    .pcard{padding:32px 24px}
+    .offer{padding:20px 18px}
+    .formula{padding:20px 20px;gap:10px}
+    .formula .t{font-size:18px}
+    blockquote{font-size:20px;padding-left:18px}
+    .study{padding:32px 22px}
+    .band{height:64vh}
+    .cta{padding:64px 22px;border-radius:10px}
+    .cta .contact-lines{font-size:14px;line-height:2}
+    .where .loc{padding:26px 22px}
+    .foot-links{gap:34px}
+    footer{padding:56px 0 36px}
+  }
   @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.hero h1 .ln span{transform:none}.eyebrow,.hero p.lede,.hero-actions,.wave-svg{opacity:1}.split .media img{transform:none}}
 </style>
 </head>
@@ -509,8 +542,8 @@
         <h2 id="cta-heading">Step into the silence</h2>
         <p>Sound healing, Access Bars or Compassion Key — every journey begins with a conversation. Not sure where to start? Book an introductory session and we'll find the right path together.</p>
         <p class="studio"><strong>In-person sessions</strong> — in your own home, or at our Mississauga home studio · by appointment</p>
-        <a class="btn btn-amber" href="mailto:shrivivek@soundwaystohealth.com?subject=Session%20booking">Book a session</a>
-        <p class="contact-lines"><a href="mailto:shrivivek@soundwaystohealth.com">shrivivek@soundwaystohealth.com</a> · <a href="tel:+16473766687">+1 (647) 376-6687</a></p>
+        <a class="btn btn-amber" href="mailto:shriramvivek@gmail.com?subject=Session%20booking">Book a session</a>
+        <p class="contact-lines"><a href="mailto:shriramvivek@gmail.com">shriramvivek@gmail.com</a> · <a href="tel:+16473766687">(647) 376-6687</a></p>
       </div>
     </div>
   </section>
@@ -524,7 +557,7 @@
       <div class="foot-links">
         <div class="foot-col"><h4>Services</h4><a href="#sound-healing">Sound Healing</a><a href="#access-bars">Access Bars</a><a href="#compassion-key">Compassion Key</a></div>
         <div class="foot-col"><h4>Explore</h4><a href="#about">About Shri Vivek</a><a href="#science">The Science</a><a href="#testimonials">Stories</a></div>
-        <div class="foot-col"><h4>Connect</h4><a href="#contact">Book a session</a><a href="mailto:shrivivek@soundwaystohealth.com">Email</a><a href="tel:+16473766687">+1 (647) 376-6687</a></div>
+        <div class="foot-col"><h4>Connect</h4><a href="#contact">Book a session</a><a href="mailto:shriramvivek@gmail.com">shriramvivek@gmail.com</a><a href="tel:+16473766687">(647) 376-6687</a></div>
       </div>
     </div>
     <p class="copyright">© 2026 Soundways to Health · Shri Vivek. All rights reserved.</p>
