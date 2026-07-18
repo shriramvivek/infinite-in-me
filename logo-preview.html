@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Logo Preview — Soundways to Health</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  body{margin:0;font-family:Jost,sans-serif;background:#080B16;color:#A9B0C4}
+  .row{display:grid;grid-template-columns:1fr 1fr;min-height:50vh}
+  .cell{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;padding:60px 30px}
+  .dark{background:#080B16}.light{background:#F5F1E8}
+  .lbl{font-size:11px;letter-spacing:.3em;text-transform:uppercase;opacity:.55}
+  .light .lbl{color:#6b6357}
+  .mark{width:190px}
+  .word{width:min(560px,88%)}
+  .hdrsim{display:flex;align-items:center;gap:13px}
+  .hdrsim svg{height:44px;width:auto}
+  .hdrsim .t{font-family:'Cormorant Garamond',serif;font-size:26px;color:#F3EEE4;letter-spacing:.02em}
+  .hdrsim .t em{font-style:italic;color:#E8A24A;font-size:15px;display:block;letter-spacing:.28em;text-transform:uppercase;font-family:Jost;margin-top:-2px}
+  .light .hdrsim .t{color:#1d1a14}
+  @media(max-width:700px){.row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="cell dark"><span class="lbl">Mark · Dark</span><img class="mark" src="assets/logo-mark.svg" alt="mark dark"></div>
+  <div class="cell light"><span class="lbl">Mark · Light</span><img class="mark" src="assets/logo-mark.svg" alt="mark light"></div>
+</div>
+<div class="row">
+  <div class="cell dark"><span class="lbl">Full Wordmark · Dark</span><img class="word" src="assets/logo-wordmark.svg" alt="wordmark"></div>
+  <div class="cell light" style="background:#0F1424"><span class="lbl">Header Lockup (as used on site)</span>
+    <div class="hdrsim">
+      <svg viewBox="0 0 220 120" aria-hidden="true">
+        <defs>
+          <linearGradient id="pf" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F4C784"/><stop offset=".48" stop-color="#E8A24A"/><stop offset="1" stop-color="#5EB6C4"/></linearGradient>
+          <linearGradient id="ps" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5EB6C4"/><stop offset="1" stop-color="#3A97A6"/></linearGradient>
+        </defs>
+        <circle cx="150" cy="60" r="40" fill="none" stroke="url(#ps)" stroke-width="10.5"/>
+        <path fill="none" stroke="url(#pf)" stroke-width="10.5" stroke-linecap="round" d="M 150 20 C 132 21,121 42,110 60 C 97 82,84 100,66 100 C 42 100,28 83,28 60 C 28 37,42 20,66 20 C 84 20,97 38,110 60 C 121 78,132 99,150 100"/>
+        <circle cx="150" cy="60" r="5" fill="#F4C784"/>
+      </svg>
+      <span class="t">Soundways<em>to health</em></span>
+    </div>
+  </div>
+</div>
+</body>
+</html>
