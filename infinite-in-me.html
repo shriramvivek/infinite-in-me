@@ -149,7 +149,9 @@
   .brand .bt em{display:block;font-family:'Jost';font-style:normal;font-size:9px;letter-spacing:.18em;color:var(--gold-deep);text-transform:uppercase;margin-top:3px}
   .nav-links{display:flex;gap:30px}
   .nav-links a{font-size:12.5px;font-weight:400;letter-spacing:.11em;text-transform:uppercase;color:var(--body);transition:color .3s}
-  .nav-links a:hover{color:var(--gold)}
+  .nav-links a:hover{color:var(--gold-deep)}
+  .nav-links a.nav-book{border:1px solid var(--gold-deep);border-radius:var(--r-pill);padding:8px 18px;color:var(--gold-deep)}
+  .nav-links a.nav-book:hover{background:var(--gold-deep);color:var(--ivory)}
   .menu-btn{display:none;background:none;border:0;color:var(--ink);cursor:pointer}
 
   /* HERO */
@@ -363,7 +365,7 @@
       <span class="bt">Infinite In Me<em>compassion key coaching</em></span>
     </a>
     <nav class="nav-links" id="nav" aria-label="Primary">
-      <a href="#top">Home</a><a href="#method">The Method</a><a href="#how">How It Works</a><a href="#transforms">Transformations</a><a href="#about">About Shri</a><a href="#science">Research</a><a href="#faq">FAQ</a><a href="#book">Book</a>
+      <a href="#top">Home</a><a href="#method">The Method</a><a href="#how">How It Works</a><a href="#transforms">Transformations</a><a href="#about">About Shri</a><a href="#science">Research</a><a href="#faq">FAQ</a><a href="#book" class="nav-book">Book</a>
     </nav>
     <button class="menu-btn" aria-label="Menu" onclick="var n=document.getElementById('nav');n.classList.toggle('open')">
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -593,7 +595,7 @@
           <a class="btn btn-gold" href="https://www.infiniteinme.com/service-page/compassion-key-single-session" target="_top"><span class="btn-label">Book a single session</span><span class="btn-meta">1 hr 30 min · CA$140</span></a>
           <a class="btn btn-line" href="https://www.infiniteinme.com/service-page/compassion-key-couples-or-family" target="_top"><span class="btn-label">Couples or family</span><span class="btn-meta">2 hr · CA$220</span></a>
         </div>
-        <p class="contact-lines">Prefer to talk first? <a href="mailto:shriramvivek@gmail.com?subject=Compassion%20Key%20session">shriramvivek@gmail.com</a> · <a href="tel:+16473766687">(647) 376-6687</a></p>
+        <p class="contact-lines">Not ready to book? <a href="mailto:shriramvivek@gmail.com?subject=Free%2015-minute%20fit%20call">Ask for a free 15-minute fit call</a> first — a short conversation to see if this is the right fit, no charge. Or <a href="mailto:shriramvivek@gmail.com?subject=Compassion%20Key%20session">email</a> · <a href="tel:+16473766687">call (647) 376-6687</a>.</p>
       </div>
     </div>
   </section>
