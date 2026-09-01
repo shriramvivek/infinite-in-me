@@ -30,7 +30,18 @@
       "address": { "@type": "PostalAddress", "addressLocality": "Mississauga", "addressRegion": "ON", "addressCountry": "CA" },
       "areaServed": "Worldwide",
       "founder": { "@id": "https://www.infiniteinme.com/#shri" },
-      "makesOffer": { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Compassion Key Coaching Session", "description": "One-to-one Compassion Key process for anxiety, PTSD, fears, trauma, scarcity and relationship patterns. Most issues addressed within 1–3 targeted sessions." } }
+      "makesOffer": [
+        {
+          "@type": "Offer", "price": "140", "priceCurrency": "CAD", "availability": "https://schema.org/InStock",
+          "url": "https://www.infiniteinme.com/service-page/compassion-key-single-session",
+          "itemOffered": { "@type": "Service", "name": "Compassion Key Coaching Session — Single", "serviceType": "Compassion Key coaching", "description": "90-minute one-to-one Compassion Key session for anxiety, PTSD, fears, trauma, scarcity and relationship patterns.", "areaServed": [{ "@type": "City", "name": "Mississauga, ON" }, { "@type": "Place", "name": "Online worldwide" }], "availableChannel": { "@type": "ServiceChannel", "serviceType": "online" } }
+        },
+        {
+          "@type": "Offer", "price": "220", "priceCurrency": "CAD", "availability": "https://schema.org/InStock",
+          "url": "https://www.infiniteinme.com/service-page/compassion-key-couples-or-family",
+          "itemOffered": { "@type": "Service", "name": "Compassion Key Coaching Session — Couples or Family", "serviceType": "Compassion Key coaching", "description": "2-hour Compassion Key session for couples or family, worked on a named shared issue.", "areaServed": [{ "@type": "City", "name": "Mississauga, ON" }, { "@type": "Place", "name": "Online worldwide" }], "availableChannel": { "@type": "ServiceChannel", "serviceType": "online" } }
+        }
+      ]
     },
     {
       "@type": "Person",
@@ -43,6 +54,7 @@
     {
       "@type": "FAQPage",
       "@id": "https://www.infiniteinme.com/#faq",
+      "speakable": { "@type": "SpeakableSpecification", "cssSelector": [".faq .a"] },
       "mainEntity": [
         { "@type": "Question", "name": "What is the Compassion Key?", "acceptedAnswer": { "@type": "Answer", "text": "The Compassion Key is a coaching process developed by Edward Mannix. After a short, powerful meditation, the facilitator guides you to direct self-compassion at the exact source of an issue — repeating guided statements and following the emotion until the charge is nullified. Awareness + Emotion = Transformation." } },
         { "@type": "Question", "name": "How many Compassion Key sessions will I need?", "acceptedAnswer": { "@type": "Answer", "text": "Most people experience real change within 1–3 targeted sessions, often feeling a shift within hours. Deeper traumas may take a little longer." } },
