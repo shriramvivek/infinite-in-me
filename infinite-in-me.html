@@ -63,17 +63,15 @@
 (function(){var d=document.documentElement;
   try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&document.visibilityState==='visible')d.className+=' anim'}catch(e){}
   setTimeout(function(){if(!window.__introStarted)d.className=d.className.replace(/\banim\b/,'')},1600)})();</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="image" href="img/portrait_full.png" fetchpriority="high">
-<!-- A-P1-3: trimmed to weights actually used (400/500 + 400 italic Cormorant,
-     300/400 Jost). TODO(founder/dev): self-host both families as WOFF2 next
-     to this file per the brief — needs the actual font files fetched, which
-     I'm not doing without sign-off since it's a new external download. -->
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet"></noscript>
+<link rel="preload" as="font" href="assets/fonts/cormorant-garamond-normal-var.woff2" type="font/woff2" crossorigin>
+<link rel="preload" as="font" href="assets/fonts/jost-var.woff2" type="font/woff2" crossorigin>
 <style>
+  /* A-P1-3: self-hosted, reusing the woff2 files already fetched for the
+     sibling Soundways site (same two families) — no new external download. */
+  @font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:300 500;font-display:swap;src:url("assets/fonts/cormorant-garamond-italic-var.woff2") format("woff2-variations")}
+  @font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 600;font-display:swap;src:url("assets/fonts/cormorant-garamond-normal-var.woff2") format("woff2-variations")}
+  @font-face{font-family:'Jost';font-style:normal;font-weight:200 600;font-display:swap;src:url("assets/fonts/jost-var.woff2") format("woff2-variations")}
   :root{
     /* A-P1-1: --gold/--gold-lt are ORNAMENT ONLY from here on, never on text.
        --gold-deep added for gold that carries text (5.19:1). --body and
