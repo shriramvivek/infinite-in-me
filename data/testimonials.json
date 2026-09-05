@@ -9,16 +9,16 @@
     "service": "",
     "state": "carrying-something",
     "source": "video",
-    "media": "",
-    "poster": "",
-    "consent": "pending",
+    "media": "media/testimonial-4.mp4",
+    "poster": "media/poster-4.jpg",
+    "consent": "granted",
     "verified": true
   },
   {
     "id": "t-02",
     "quote": "For me, the belief is back and I attribute it to your sound healing session. Thank you so much. And I really wish a lot more people experience your magic.",
     "quote_full": "Hey Vicky, this is a video to thank you for the sound healing experience that you gave us a couple of days back. I must share with you that the experience was very, very, very deep. I didn't go into a very deep, extremely relaxed state. I really didn't want to open my eyes and come back. So thank you for the experience and I think for me the major shift, there was a shift that happened, which is, apart from going deep, I think for me, one of the shifts that I find after that sound healing session is the belief in self, especially at a time that I've got so much to do, I think it's very common for us to have these questions. Will I be able to do it? How will I be able to do it? But for me, the belief is back and I attribute it to your sound healing session. Thank you so much. And I really wish a lot more people experience your magic. And in addition to the sound healing, just your presence and the way you guide us through it is absolutely magical. Thank you so much.",
-    "name": "",
+    "name": "Vaishnav",
     "location": "",
     "date": "2023-07",
     "service": "sound-healing",
@@ -39,24 +39,24 @@
     "service": "",
     "state": "running-on-empty",
     "source": "video",
-    "media": "",
-    "poster": "",
-    "consent": "pending",
+    "media": "media/testimonial-5.mp4",
+    "poster": "media/poster-5.jpg",
+    "consent": "granted",
     "verified": true
   },
   {
     "id": "t-04",
     "quote": "I was able to draw boundaries, learned to say no, and started saying no for certain things as a part of drawing boundaries.",
     "quote_full": "I did three sessions with Vicky around two months back and during the spiel of counseling and therapy he was extremely accommodating on my schedule he ensured that I was present for the session emotionally and mentally and he had gained that trust from me that I knew that he's committed to my growth and yeah and as a result of these three sessions what changed in me was before the sessions I had become somewhat reclusive I was restless I was smoking every alternate weeks and just after the sessions I had dealt with a lot of trauma as a result of which I was more courageous than I was before I was making decisions more easily I was able to draw boundaries learned to say no and started saying no for certain things as a part of drawing boundaries I started to become regular with my practices and you know exercise yoga meditation and with my schedule I was overeating before before the sessions and after the sessions that the shifted for me now I'm not eating overeating anymore and all that happened just in three weeks so yep it was amazing thanks Vicky",
-    "name": "",
+    "name": "Anu",
     "location": "",
     "date": "2023-11",
     "service": "",
     "state": "",
     "source": "video",
-    "media": "",
-    "poster": "",
-    "consent": "pending",
+    "media": "media/testimonial-7.mp4",
+    "poster": "media/poster-7.jpg",
+    "consent": "granted",
     "verified": true
   },
   {
@@ -69,9 +69,9 @@
     "service": "",
     "state": "running-on-empty",
     "source": "video",
-    "media": "",
-    "poster": "",
-    "consent": "pending",
+    "media": "media/testimonial-6.mp4",
+    "poster": "media/poster-6.jpg",
+    "consent": "granted",
     "verified": true
   },
   {
@@ -84,9 +84,9 @@
     "service": "",
     "state": "",
     "source": "video",
-    "media": "",
-    "poster": "",
-    "consent": "pending",
+    "media": "media/testimonial-8.mp4",
+    "poster": "media/poster-8.jpg",
+    "consent": "granted",
     "verified": true
   },
   {
@@ -116,7 +116,7 @@
     "source": "video",
     "media": "media/testimonial-1.mp4",
     "poster": "media/poster-1.jpg",
-    "consent": "pending",
+    "consent": "granted",
     "verified": true
   }
 ]

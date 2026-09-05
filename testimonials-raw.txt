@@ -7,9 +7,11 @@ Wix Inbox has exactly one conversation, unrelated SEO spam (Visitor #9154, 12/9/
 a testimonial, not included below. No hidden/unpublished testimonials page found (site's
 pages are served from this repo via Netlify, not from Wix's own page renderer, per audit).
 
-CONSENT STATUS: none of the 6 below have owner-confirmed consent yet. Per brief Task 1.5,
-"consent: pending" items do not get published. Owner must confirm (a) that each speaker
-agreed to be featured and (b) full names, before any of these go live.
+CONSENT STATUS (updated 2026-09-05): owner has granted consent for all 8 testimonials,
+including media/testimonial-1.mp4, and confirmed names — Jack, Donna (both recordings),
+Sean, and the two remaining unnamed videos are Anu (VID-20231115-WA0000, three-sessions/
+boundaries one) and Vaishnav (VID-20230703-WA0019, sound-healing one, = media/testimonial-3.mp4).
+No last names given; published as first name only per owner's own naming.
 
 ======================================================================
 SOURCE FILE: JACKSHRI.mp4
@@ -37,7 +39,7 @@ You have been a game changer.
 SOURCE FILE: VID-20230703-WA0019.mp4
 Wix folder: Site Files > Testimonials
 Duration: 1:11.8 (71.8s)  |  Size: 13.7MB  |  WhatsApp filename date: 2023-07-03
-Speaker name given in video: none (addresses practitioner as "Vicky")
+Speaker name given in video: none (addresses practitioner as "Vicky") — owner confirms: Vaishnav
 ------------------------------------------------------------
 Hey Vicky, this is a video to thank you for the sound healing experience that you gave us a
 couple of days back.
@@ -92,7 +94,7 @@ If you're going through what I was going through.
 SOURCE FILE: VID-20231115-WA0000.mp4
 Wix folder: Site Files > Testimonials
 Duration: 1:38.9 (98.9s)  |  Size: 19.1MB  |  WhatsApp filename date: 2023-11-15
-Speaker name given in video: none
+Speaker name given in video: none — owner confirms: Anu
 FLAGGED — contains the word "therapy" (see rejection list). Do not quote that sentence.
 ------------------------------------------------------------
 I did three sessions with Vicky around two months back and during the spiel of counseling
@@ -159,17 +161,15 @@ more fulfilling life, I humbly recommend Sheree.
 ======================================================================
 SOURCE FILE: media/testimonial-1.mp4
 Duration: 5:23 (323.1s)  |  Size: 20.8MB
-Clearance: NOT explicitly cleared in the brief (only testimonial-2 and testimonial-3 are).
-Was deleted in the working tree, restored from git HEAD (see Task 0.3). Needs owner
-confirmation to publish.
-FLAGGED — brand-fit concern, not a compliance rejection: this is a real, verbatim recording,
-but it is an abstract, stream-of-consciousness description of an altered/sensory state
-during a session ("oneness with the galaxies", "no words", "infinite"). It names no problem
-the person came in with and no concrete outcome, and it sits far outside the brand's "60%
-grounded" personality target (BRAND-GUIDELINES.md §1.5) and its stated aim to avoid
-mystical/vague language that a sceptical reader would use to dismiss the page. Recommend the
-owner decide whether this belongs on the site at all before it goes anywhere near consent.
-Speaker name given in video: none
+Clearance: GRANTED 2026-09-05 — owner reviewed the brand-fit flag below and chose to
+publish anyway. Was deleted in the working tree, restored from git HEAD (see Task 0.3).
+Compressed from 20.8MB to 9.2MB (480p, crf 32) before publishing.
+FLAGGED (informational, not acted on further) — this is a real, verbatim recording, but
+it is an abstract, stream-of-consciousness description of an altered/sensory state during
+a session ("oneness with the galaxies", "no words", "infinite"). It names no problem the
+person came in with and no concrete outcome, and it sits far outside the brand's "60%
+grounded" personality target (BRAND-GUIDELINES.md §1.5). Owner's call, noted for the record.
+Speaker name given in video: none (owner did not give a name for this one)
 ------------------------------------------------------------
 there is this forms can happen, you are contained within that and I can still field the field,
 this wide field around me, I am in the energy, this form is within this energy, within this
@@ -215,7 +215,7 @@ It is a very special moment and experience.
 ======================================================================
 SOURCE FILE: media/testimonial-3.mp4
 Clearance: GRANTED — pre-cleared per BUILD-BRIEF-SONNET.md section 11.
-Speaker name given in video: none
+Speaker name given in video: none — owner confirms: Vaishnav
 DUPLICATE — word-for-word the same recording as VID-20230703-WA0019.mp4 harvested from Wix
 above (same "Hey Vicky" sound-healing testimonial). Treated as one testimonial (t-02 in
 data/testimonials.json), using this repo file since it's already compressed with a poster
