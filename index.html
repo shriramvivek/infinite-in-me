@@ -43,6 +43,10 @@
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sound Healing Session", "description": "60–90 minute individual sound healing with Himalayan singing bowls, crystal bowls, gongs, tuning forks and handpan. Also group sound baths and corporate wellness programs." }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 80, "maxPrice": 120, "priceCurrency": "CAD" } },
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Access Bars Session", "description": "Gentle 32-point Access Bars session releasing the stored electromagnetic charge of thoughts, fixed beliefs and emotions. First-time $110, return $85, Bars+Sound pairing $160." }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 85, "maxPrice": 160, "priceCurrency": "CAD" } },
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Compassion Key Session", "description": "Compassion Key process addressing anxiety, PTSD, fears and past trauma. Single $140, 3-session journey $380, couples/family $220." }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 140, "maxPrice": 380, "priceCurrency": "CAD" } }
+  ],
+  "review": [
+    { "@type": "Review", "author": { "@type": "Person", "name": "Sound Healing client" }, "reviewBody": "When I hear the sound, I feel relaxed, very relaxed and calm, and a peaceful mind. My whole body was just completely relaxed." },
+    { "@type": "Review", "author": { "@type": "Person", "name": "Sound Healing client" }, "reviewBody": "For me, the belief is back and I attribute it to your sound healing session." }
   ]
 }
 </script>
@@ -186,6 +190,14 @@
   .pcard p{font-size:15px;font-weight:300;margin-bottom:22px}
   .pcard .go{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent,var(--amber))}
 
+  /* TESTIMONIALS */
+  .testi{background:var(--night2)}
+  .testi-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .tsm-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r-md);padding:40px 34px}
+  .tsm-card video{width:100%;border-radius:var(--r-sm);background:var(--night);display:block;margin-bottom:22px}
+  .tsm-card blockquote{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(20px,2.4vw,26px);line-height:1.35;color:var(--ink);border:none;padding:0;margin:0 0 18px}
+  .tsm-card cite{display:block;font-style:normal;font-family:'Jost',sans-serif;font-weight:300;font-size:13px;color:var(--muted);letter-spacing:.02em}
+
   /* SERVICE SECTIONS */
   .svc{padding:120px 0;border-top:1px solid var(--line)}
   .svc .split{align-items:center}
@@ -314,7 +326,7 @@
   html.anim .reveal{opacity:0;transform:translateY(50px)}
 
   @media(max-width:900px){
-    .split,.exp,.tgrid,.sci-grid,.where,.path-cards,.offers{grid-template-columns:1fr;gap:34px}
+    .split,.exp,.tgrid,.sci-grid,.where,.path-cards,.offers,.testi-cards{grid-template-columns:1fr;gap:34px}
     .sci-grid,.exp{grid-template-columns:1fr 1fr}
     .svc .split.flip .media{order:0}
     .svc .split{align-items:stretch}
@@ -617,6 +629,31 @@
           <h3>Our Mississauga home studio</h3>
           <p>Step into a dedicated healing sanctuary — a space held in silence, candlelight and resonance, built for the journey into Nishabdhaa.</p>
           <span class="tag">Mississauga · by appointment</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testi" id="testimonials" aria-labelledby="testi-heading">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="kicker">In their own words</span><h2 id="testi-heading">People who've been where you are</h2></div>
+      <div class="testi-cards">
+        <div class="tsm-card reveal">
+          <video poster="media/poster-2.jpg" preload="none" controls width="478" height="850">
+            <source src="media/testimonial-2.mp4" type="video/mp4">
+            <track kind="captions" src="media/testimonial-2.vtt" srclang="en" label="English" default>
+          </video>
+          <blockquote>&ldquo;When I hear the sound, I feel relaxed, very relaxed and calm, and a peaceful mind. My whole body was just completely relaxed.&rdquo;</blockquote>
+          <cite>Sound Healing client</cite>
+        </div>
+        <div class="tsm-card reveal">
+          <video poster="media/poster-3.jpg" preload="none" controls width="368" height="656">
+            <source src="media/testimonial-3.mp4" type="video/mp4">
+            <track kind="captions" src="media/testimonial-3.vtt" srclang="en" label="English" default>
+          </video>
+          <blockquote>&ldquo;For me, the belief is back and I attribute it to your sound healing session.&rdquo;</blockquote>
+          <cite>Sound Healing client</cite>
         </div>
       </div>
     </div>
