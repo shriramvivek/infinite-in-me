@@ -1,4 +1,21 @@
+# --- infiniteinme.com -------------------------------------------------
+# This domain used to be a Wix page whose whole body was a 900px iframe
+# pointing back here, so the real content was unreachable below the hero
+# and invisible to crawlers. It is now served directly, same as Soundways.
+# Host-specific rules must come first: Netlify takes the first match, and
+# the bare paths further down would otherwise win for both domains.
+#
+# 200 (rewrite, not 301) so the URL stays https://www.infiniteinme.com/
+# while the content comes from infinite-in-me.html.
+https://www.infiniteinme.com/             /infinite-in-me.html        200!
+https://www.infiniteinme.com/robots.txt   /robots-infiniteinme.txt    200!
+https://www.infiniteinme.com/sitemap.xml  /sitemap-infiniteinme.xml   200!
+# Old direct link to the raw file -> canonical root, so the two URLs don't
+# compete for the same content in search.
+https://www.infiniteinme.com/infinite-in-me.html   /                  301!
+
 /privacy             /privacy.html             200
 /terms               /terms.html               200
 /cancellation         /cancellation.html        200
 /scope-of-practice    /scope-of-practice.html   200
+/soundways-to-health.html    /    301
