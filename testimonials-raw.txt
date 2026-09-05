@@ -157,8 +157,110 @@ If you're looking to break free from anxiety and any other negative emotions and
 more fulfilling life, I humbly recommend Sheree.
 
 ======================================================================
-REPO VIDEOS (media/testimonial-1.mp4, -2.mp4, -3.mp4) — transcripts pending, added below
-once whisper finishes running. testimonial-2 and testimonial-3 are the ones the owner has
-already cleared to publish (see BUILD-BRIEF-SONNET.md section 11). testimonial-1 clearance
-is unconfirmed — was deleted in the working tree and restored from git; not explicitly
-cleared in the brief, needs owner confirmation.
+SOURCE FILE: media/testimonial-1.mp4
+Duration: 5:23 (323.1s)  |  Size: 20.8MB
+Clearance: NOT explicitly cleared in the brief (only testimonial-2 and testimonial-3 are).
+Was deleted in the working tree, restored from git HEAD (see Task 0.3). Needs owner
+confirmation to publish.
+FLAGGED — brand-fit concern, not a compliance rejection: this is a real, verbatim recording,
+but it is an abstract, stream-of-consciousness description of an altered/sensory state
+during a session ("oneness with the galaxies", "no words", "infinite"). It names no problem
+the person came in with and no concrete outcome, and it sits far outside the brand's "60%
+grounded" personality target (BRAND-GUIDELINES.md §1.5) and its stated aim to avoid
+mystical/vague language that a sceptical reader would use to dismiss the page. Recommend the
+owner decide whether this belongs on the site at all before it goes anywhere near consent.
+Speaker name given in video: none
+------------------------------------------------------------
+there is this forms can happen, you are contained within that and I can still field the field,
+this wide field around me, I am in the energy, this form is within this energy, within this
+it just felt like it is just sensations, just sensations running through my neck, did not
+have sense of my body, I do not know, the start, the finish, just pulsing, just pulsing
+but the cosmos just could feel it, it is just this, this is just created somewhere in between,
+I do not know, just the pulse, the vibration and that is it, just a bundle of sensations
+and form is somewhere in between and it felt really vast, it felt like somewhere in the space
+just I could feel oneness with the galaxies, the stars, it felt as if the stars are also
+pulsing like this, just that feeling anymore, but there is a sense of coming back here feels
+like, this is just very weird space I am in right now, but that was the home, I felt that I
+belong there, that is it, that is the space I should be in, I was smiling, I knew I was
+smiling but I could not feel my smile, I was maybe just joy, but yeah, this is, I do not know
+what this is, yeah, it is all mental, this is just mentally connected from here, but what I
+felt in that was, oh my god, honestly it was just, there is no start, finish, nothing, just
+vibrations running through, I was lost in the sense, the pulses, the sensation, the vibration
+only, that is it, that is it, just floating somewhere, I do not know where, yeah, but very
+familiar, it felt familiar, it is not the first time, yeah, I do not know if I am able to
+describe it, there is no words, no words, things are moving, it is just sensations are giving
+the form, this is all happening within that, again I could feel, I lost you as well, like you
+were not there, I could not, I could not feel that I was in this particular space, like this
+sense of space around me was gone too.
+How do you describe that, that you spoke about?
+I am trying my best to describe, it literally felt like, you know, if I were to describe it
+visually, it just felt like stars and stars and stars and stars and the galaxies and the
+galaxies and the galaxies, they are just talking to each other, just pulsing and just being
+in the same, they are just, like I am just there within that space and just, like I could
+feel, like if something is going through here, some other star is vibrating with me and we
+are just in Saint Christ, I do not know, there is a number to it, there is just infinite,
+just running through and the vibration can run through, there is no end to it, like it is
+just, and somewhere in between those vibrations.
+
+======================================================================
+SOURCE FILE: media/testimonial-2.mp4
+Clearance: GRANTED — pre-cleared per BUILD-BRIEF-SONNET.md section 11.
+Speaker name given in video: none
+------------------------------------------------------------
+So I just had the sound bath and when lying down and when I hear the sound, I feel relaxed,
+very relaxed and calm and a peaceful mind.
+My whole body was just completely relaxed, but my mind was still in my conscious mind.
+It is a very special moment and experience.
+
+======================================================================
+SOURCE FILE: media/testimonial-3.mp4
+Clearance: GRANTED — pre-cleared per BUILD-BRIEF-SONNET.md section 11.
+Speaker name given in video: none
+DUPLICATE — word-for-word the same recording as VID-20230703-WA0019.mp4 harvested from Wix
+above (same "Hey Vicky" sound-healing testimonial). Treated as one testimonial (t-02 in
+data/testimonials.json), using this repo file since it's already compressed with a poster
+image ready.
+------------------------------------------------------------
+Hey Vicky, this is a video to thank you for the sound healing experience that you gave us a
+couple of days back.
+I must share with you that the experience was very very very deep.
+I didn't go into a very deep, extremely relaxed state.
+I really didn't want to open my eyes and come back.
+So thank you for the experience and I think for me the major shift, there was a shift that
+happened, which is apart from going deep.
+I think for me one of the shifts that I find after that sound healing session is the belief
+in self, especially at a time that I've got so much to do.
+I think it's very common for us to have these questions.
+Will I be able to do it?
+How will I be able to do it?
+But for me the belief is back and I attribute it to your sound healing session.
+Thank you so much and I really wish a lot more people experience your magic
+and in addition to the sound healing just your presence and the way you guide us through it
+is absolutely magical.
+Thank you so much.
+
+======================================================================
+REJECTION / FLAG LIST (Task 1.4)
+
+1. VID-20231115-WA0000.mp4 — contains the word "therapy" ("during the spiel of counseling
+   and therapy"). "Therapy" is banned per BRAND-GUIDELINES.md §3.3/§12.4 — Ontario regulates
+   psychotherapy as a controlled act and this practice is not registered for it. Per brief
+   instruction, used a different section of the same testimonial (the boundaries/habits
+   section, which never touches counseling/therapy language) as the published quote instead
+   of rejecting the whole testimonial.
+
+2. media/testimonial-1.mp4 — not a literal banned-word or health-claim violation, but flagged
+   above as a brand-fit concern for the owner to decide on, separately from consent.
+
+3. Donna appears twice (VID-20231106-WA0024.mp4 and VID-20240727-WA0007.mp4) — same person,
+   two separate recordings with different framing (mother/general job vs. marketing-team
+   manager in California). Not merged (would violate "trim, never rewrite" across two
+   separate recordings). Both entered as separate testimonials (t-03, t-05); owner should
+   confirm whether to use one, the other, or both.
+
+No other testimonial contained a banned word or an explicit health claim (cured, healed,
+fixed, permanent, treatment, diagnosed, "better than my psychiatrist," or a named clinical
+condition presented as resolved). Several use "magic/magical" or "transform/transformation"
+in their own words describing a subjective feeling — not a compliance violation (not a
+health claim), but worth the owner's awareness since BRAND-GUIDELINES.md §3.3 avoids that
+register in the site's own copy.
