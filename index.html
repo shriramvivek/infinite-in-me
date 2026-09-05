@@ -56,6 +56,21 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Do I have to talk about anything?", "acceptedAnswer": { "@type": "Answer", "text": "No. For sound healing and the head-touch session you don't have to say a word past hello. For compassion work we do talk, and you decide how much." } },
+    { "@type": "Question", "name": "Will you touch me?", "acceptedAnswer": { "@type": "Answer", "text": "Only in the head session, and only lightly, on your head. I'll tell you before I do. You stay fully clothed the whole time, in everything I offer." } },
+    { "@type": "Question", "name": "What do I wear?", "acceptedAnswer": { "@type": "Answer", "text": "Whatever you're comfortable lying down in. Bring socks — feet get cold." } },
+    { "@type": "Question", "name": "What if I cry, or fall asleep, or nothing happens?", "acceptedAnswer": { "@type": "Answer", "text": "All three are normal and all three are fine. Sleeping doesn't mean it didn't work. Nothing happening the first time doesn't mean nothing will." } },
+    { "@type": "Question", "name": "Can I stop?", "acceptedAnswer": { "@type": "Answer", "text": "Any moment. You say stop, we stop. You don't owe me a reason." } },
+    { "@type": "Question", "name": "Is this instead of my doctor or therapist?", "acceptedAnswer": { "@type": "Answer", "text": "No. It sits beside them. If you're being treated for something, keep being treated for it. Tell your care team you're doing this — most are glad to hear it." } },
+    { "@type": "Question", "name": "What if I think this is nonsense?", "acceptedAnswer": { "@type": "Answer", "text": "Then come for the ninety minutes of quiet. Plenty of people have." } }
+  ]
+}
+</script>
 <link rel="icon" type="image/svg+xml" href="assets/logo-mark.svg">
 <script>/* Content is visible by default. We only opt in to the hidden "about to
    animate" state when an intro animation can actually run, and we drop back
@@ -196,6 +211,22 @@
   .pcard h3{font-size:27px;font-weight:500;margin-bottom:12px}
   .pcard p{font-size:15px;font-weight:300;margin-bottom:22px}
   .pcard .go{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent,var(--amber))}
+
+  /* IS THIS YOU */
+  .itc{max-width:760px}
+  .itc ul{list-style:none;margin:0 0 34px}
+  .itc li{position:relative;padding:14px 0 14px 30px;border-bottom:1px solid var(--line);font-size:17px;font-weight:300;color:var(--body);text-align:left}
+  .itc li::before{content:"";position:absolute;left:0;top:24px;width:14px;height:1.5px;background:var(--amber)}
+  .itc p.close{font-size:17px;font-weight:300;text-align:left}
+
+  /* WORRIES / FAQ */
+  .worries-list{max-width:760px;margin:0 auto}
+  .worries-list details{border-bottom:1px solid var(--line);padding:22px 0}
+  .worries-list summary{cursor:pointer;font-family:'Cormorant Garamond',serif;font-size:21px;color:var(--ink);font-weight:500;list-style:none;position:relative;padding-right:34px}
+  .worries-list summary::-webkit-details-marker{display:none}
+  .worries-list summary::after{content:"+";position:absolute;right:0;top:-4px;color:var(--amber);font-size:26px;font-family:'Jost',sans-serif}
+  .worries-list details[open] summary::after{content:"\2212"}
+  .worries-list p{margin-top:14px;font-size:15.5px;font-weight:300}
 
   /* TESTIMONIALS */
   .testi{background:var(--night2)}
@@ -400,7 +431,7 @@
       <span class="bt">Soundways<em>to health</em></span>
     </a>
     <nav class="nav-links" id="nav" aria-label="Primary">
-      <a href="#about">About</a><a href="#sound-healing">Sound Healing</a><a href="#access-bars">Access Bars</a><a href="#compassion-key">Compassion Key</a><a href="#science">Science</a><a href="https://book.soundwaystohealth.com/book-online">Book</a>
+      <a href="#sound-healing">Sound Healing</a><a href="#access-bars">Access Bars</a><a href="#compassion-key">Compassion Key</a><a href="#worries">FAQ</a><a href="#science">Science</a><a href="#about">About</a><a href="https://book.soundwaystohealth.com/book-online">Book</a>
     </nav>
     <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="nav">
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -424,6 +455,24 @@
       </div>
     </div>
     <div class="scroll-hint" aria-hidden="true"><span class="bar"></span>Scroll</div>
+  </section>
+
+  <!-- IS THIS YOU -->
+  <section id="is-this-you" aria-labelledby="ity-heading">
+    <div class="wrap itc">
+      <div class="sec-head reveal">
+        <span class="kicker">Is this you?</span>
+        <h2 id="ity-heading">Is this you?</h2>
+      </div>
+      <ul class="reveal">
+        <li>You fall asleep fine and wake at 3 a.m. with your jaw clenched.</li>
+        <li>Your shoulders have been up around your ears since some year you can't remember.</li>
+        <li>You're doing fine on paper and running on empty underneath it.</li>
+        <li>Your brain has too many tabs open and none of them close.</li>
+        <li>Something old still gets a reaction out of you that you can't talk yourself out of.</li>
+      </ul>
+      <p class="close reveal">You don't need to know anything about sound healing to be in the right place. Most people who come here had never tried it and weren't sure they believed in it. That's fine. You don't have to believe in it for your body to respond to it.</p>
+    </div>
   </section>
 
   <!-- EXPERIENCE -->
@@ -654,6 +703,46 @@
     </div>
   </section>
 
+  <!-- WORRIES -->
+  <section id="worries" aria-labelledby="worries-heading">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker">Before you book</span>
+        <h2 id="worries-heading">Things people worry about</h2>
+      </div>
+      <div class="worries-list reveal">
+        <details>
+          <summary>Do I have to talk about anything?</summary>
+          <p>No. For sound healing and the head-touch session you don't have to say a word past hello. For compassion work we do talk, and you decide how much.</p>
+        </details>
+        <details>
+          <summary>Will you touch me?</summary>
+          <p>Only in the head session, and only lightly, on your head. I'll tell you before I do. You stay fully clothed the whole time, in everything I offer.</p>
+        </details>
+        <details>
+          <summary>What do I wear?</summary>
+          <p>Whatever you're comfortable lying down in. Bring socks — feet get cold.</p>
+        </details>
+        <details>
+          <summary>What if I cry, or fall asleep, or nothing happens?</summary>
+          <p>All three are normal and all three are fine. Sleeping doesn't mean it didn't work. Nothing happening the first time doesn't mean nothing will.</p>
+        </details>
+        <details>
+          <summary>Can I stop?</summary>
+          <p>Any moment. You say stop, we stop. You don't owe me a reason.</p>
+        </details>
+        <details>
+          <summary>Is this instead of my doctor or therapist?</summary>
+          <p>No. It sits beside them. If you're being treated for something, keep being treated for it. Tell your care team you're doing this — most are glad to hear it.</p>
+        </details>
+        <details>
+          <summary>What if I think this is nonsense?</summary>
+          <p>Then come for the ninety minutes of quiet. Plenty of people have.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <!-- SCIENCE -->
   <section class="science" id="science" aria-labelledby="sci-heading">
     <svg class="cymatic" viewBox="0 0 400 400" aria-hidden="true">
@@ -755,7 +844,7 @@
         <p>Sound healing, Access Bars and Compassion Key with Shri Vivek — guiding you to Nishabdhaa, the profound silence within. Mississauga, Ontario.</p></div>
       <div class="foot-links">
         <div class="foot-col"><h3>Services</h3><a href="#sound-healing">Sound Healing</a><a href="#access-bars">Access Bars</a><a href="#compassion-key">Compassion Key</a></div>
-        <div class="foot-col"><h3>Explore</h3><a href="#about">About Shri Vivek</a><a href="#science">The Science</a></div>
+        <div class="foot-col"><h3>Explore</h3><a href="#about">About Shri Vivek</a><a href="#science">The Science</a><a href="#worries">FAQ</a></div>
         <div class="foot-col"><h3>Connect</h3><a href="https://book.soundwaystohealth.com/book-online">Book a session</a><a href="mailto:shriramvivek@gmail.com">shriramvivek@gmail.com</a><a href="tel:+16473766687">(647) 376-6687</a></div>
         <div class="foot-col"><h3>Legal</h3><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="cancellation.html">Cancellation Policy</a><a href="scope-of-practice.html">Scope of Practice</a></div>
       </div>
