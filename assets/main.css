@@ -71,7 +71,8 @@ header.scrolled{background:rgba(8,11,22,.72);backdrop-filter:blur(18px);border-b
 .hero-inner{position:relative;z-index:3;padding:110px 26px 0;max-width:980px}
 .eyebrow{display:inline-block;font-size:12px;letter-spacing:.36em;text-transform:uppercase;color:var(--amber);margin-bottom:30px;font-weight:400}
 html.anim .eyebrow{opacity:0}
-.hero h1{font-size:clamp(48px,9vw,116px);font-weight:400;color:var(--ink);letter-spacing:.005em;margin-bottom:22px;text-shadow:0 4px 40px rgba(0,0,0,.5)}
+/* 3 lines, so capped lower than the old 2-line headline to keep the CTA above the fold on a 800px-tall laptop */
+.hero h1{font-size:clamp(40px,6.2vw,80px);line-height:1.08;font-weight:400;color:var(--ink);letter-spacing:.005em;margin-bottom:22px;text-shadow:0 4px 40px rgba(0,0,0,.5)}
 .hero h1 .ln{display:block;overflow:hidden}
 .hero h1 .ln span{display:inline-block}
 html.anim .hero h1 .ln span{transform:translateY(110%)}
@@ -147,6 +148,7 @@ blockquote cite{display:block;font-style:normal;font-family:'Jost',sans-serif;fo
 
 /* TESTIMONIALS */
 .testi{background:var(--night2)}
+.testi-note,.sec-head .testi-note{font-size:13.5px;line-height:1.65;font-weight:300;color:var(--muted);max-width:640px;margin-top:14px}
 .testi-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .tsm-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r-md);padding:40px 34px}
 .tsm-card video{width:100%;border-radius:var(--r-sm);background:var(--night);display:block;margin-bottom:22px}
@@ -220,7 +222,7 @@ blockquote cite{display:block;font-style:normal;font-family:'Jost',sans-serif;fo
 
 /* CONTACT */
 .cta{position:relative;border-radius:var(--r-lg);padding:110px 40px;text-align:center;overflow:hidden;background-size:cover;background-position:center 30%;background-image:linear-gradient(rgba(8,11,22,.66),rgba(8,11,22,.9)),url("../media/hero-bowl-960.jpg");background-image:linear-gradient(rgba(8,11,22,.66),rgba(8,11,22,.9)),image-set(url("../media/hero-bowl-960.webp") type("image/webp"),url("../media/hero-bowl-960.jpg") type("image/jpeg"));border:1px solid var(--line)}
-.cta h2{font-size:clamp(38px,6vw,74px);font-weight:400;margin-bottom:18px;color:var(--ink)}
+.cta h1,.cta h2{font-size:clamp(38px,6vw,74px);font-weight:400;margin-bottom:18px;color:var(--ink)}
 .cta p{max-width:580px;margin:0 auto 20px;color:rgba(243,238,228,.85);font-size:18px;font-weight:300}
 .cta .studio{margin:24px 0 32px;color:var(--body);font-size:15px;letter-spacing:.02em}
 .cta .studio strong{color:var(--ink);font-weight:500}
