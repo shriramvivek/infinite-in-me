@@ -57,7 +57,15 @@
 }
 </script>
 <link rel="icon" type="image/svg+xml" href="assets/logo-mark.svg">
-<script>(function(){var d=document.documentElement;
+<script>(function(){
+  // This used to be a one-page site; old links point at #section anchors that are
+  // now separate pages. Fragments never reach the server, so _redirects can't do this.
+  var map={'sound-healing':'sound-healing.html','access-bars':'access-bars.html',
+    'compassion-key':'compassion-key.html','about':'about.html','science':'science.html'},
+    id=location.hash.slice(1);
+  if(id&&map[id]){location.replace(map[id]);return}
+})();
+(function(){var d=document.documentElement;
   try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&document.visibilityState==='visible')d.className+=' anim'}catch(e){}
   setTimeout(function(){if(!window.__introStarted)d.className=d.className.replace(/\banim\b/,'')},1600)})();</script>
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
