@@ -33,12 +33,12 @@
       "makesOffer": [
         {
           "@type": "Offer", "price": "140", "priceCurrency": "CAD", "availability": "https://schema.org/InStock",
-          "url": "https://www.infiniteinme.com/service-page/compassion-key-single-session",
+          "url": "https://book.infiniteinme.com/service-page/compassion-key-single-session",
           "itemOffered": { "@type": "Service", "name": "Compassion Key Coaching Session — Single", "serviceType": "Compassion Key coaching", "description": "90-minute one-to-one Compassion Key session for anxiety, PTSD, fears, trauma, scarcity and relationship patterns.", "areaServed": [{ "@type": "City", "name": "Mississauga, ON" }, { "@type": "Place", "name": "Online worldwide" }], "availableChannel": { "@type": "ServiceChannel", "serviceType": "online" } }
         },
         {
           "@type": "Offer", "price": "220", "priceCurrency": "CAD", "availability": "https://schema.org/InStock",
-          "url": "https://www.infiniteinme.com/service-page/compassion-key-couples-or-family",
+          "url": "https://book.infiniteinme.com/service-page/compassion-key-couples-or-family",
           "itemOffered": { "@type": "Service", "name": "Compassion Key Coaching Session — Couples or Family", "serviceType": "Compassion Key coaching", "description": "2-hour Compassion Key session for couples or family, worked on a named shared issue.", "areaServed": [{ "@type": "City", "name": "Mississauga, ON" }, { "@type": "Place", "name": "Online worldwide" }], "availableChannel": { "@type": "ServiceChannel", "serviceType": "online" } }
         }
       ]
@@ -173,6 +173,8 @@
   .hero h1 .ln{display:block}
   .hero p.lede{max-width:520px;margin:0 0 38px;font-size:clamp(17px,1.9vw,20px);color:var(--body)}
   .hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+  .hero-fit{margin:22px 0 0;font-size:15px;color:var(--body)}
+  .hero-fit a{color:var(--gold-deep);text-decoration:underline;text-underline-offset:3px}
   /* portrait */
   .portrait{position:relative;justify-self:center}
   .portrait .ring{position:absolute;top:6%;left:-6%;right:-6%;aspect-ratio:1;border:1px solid var(--line);border-radius:50%;z-index:0}
@@ -388,10 +390,17 @@
           <span class="ln">This is the part that <em class="g">ends it</em>.</span>
         </h1>
         <p class="lede" id="heroLede">The Compassion Key works on the emotional charge, not the story. One named issue, one to three sessions, and you're done. Online worldwide, or in Mississauga.</p>
+        <!-- Primary action is "how it works", not "book": a cold visitor to an
+             unfamiliar modality can't evaluate a CA$140 commitment at scroll
+             position 0, so the booking ask above the fold was asking for trust
+             that doesn't exist yet. Book stays visible (and keeps the price,
+             which this audience checks early) as the secondary. The free fit
+             call is the zero-risk entry for the hesitant reader. -->
         <div class="hero-actions" id="heroActions">
-          <a class="btn btn-gold" href="#book"><span class="btn-label">Book a session</span><span class="btn-meta">90 min · CA$140</span></a>
-          <a class="btn btn-line" href="#how">How a session works</a>
+          <a class="btn btn-gold" href="#how">How a session works</a>
+          <a class="btn btn-line" href="#book"><span class="btn-label">Book a session</span><span class="btn-meta">90 min · CA$140</span></a>
         </div>
+        <p class="hero-fit">Not sure yet? <a href="mailto:shriramvivek@gmail.com?subject=Free%2015-minute%20fit%20call">Ask for a free 15-minute fit call</a> — no charge, no commitment.</p>
       </div>
       <div class="portrait" id="portrait">
         <span class="halo" aria-hidden="true"></span>
@@ -462,7 +471,7 @@
   <!-- HOW IT WORKS -->
   <section class="steps" id="how" aria-labelledby="how-heading">
     <div class="wrap">
-      <div class="sec-head reveal"><span class="kicker">The Session</span><h2 id="how-heading">How a session unfolds</h2><p>One hour. Three movements. A weight you've carried for years — gone.</p></div>
+      <div class="sec-head reveal"><span class="kicker">The Session</span><h2 id="how-heading">How a session unfolds</h2><p>Ninety minutes. Three movements. A weight you've carried for years — gone.</p></div>
       <div class="step-line">
         <div class="step reveal"><span class="dot" aria-hidden="true"></span><h3>Arrive &amp; attune</h3><p>We briefly explore the issue together, then settle into a short, powerful meditation that opens the door.</p></div>
         <div class="step reveal"><span class="dot" aria-hidden="true"></span><h3>Direct compassion</h3><p>Guided statements aim self-compassion at the exact source. Emotions surface, move — and begin to release.</p></div>
@@ -587,13 +596,16 @@
         <span class="kicker">Begin</span>
         <h2 id="book-heading">Come experience the magic<br>of the <em class="g">Compassion Key</em></h2>
         <p>One conversation is all it takes to know if this is your path. Sessions online worldwide, or in person in Mississauga.</p>
-        <!-- Bookings stay on this domain's own Wix Bookings service pages.
-             Confirmed: shares one calendar with Soundways, so a slot booked
-             here also blocks it there. target="_top" breaks out of the Wix
-             embed iframe. -->
+        <!-- Bookings stay on Wix (this page is static and can't take payment),
+             but on our own book. subdomain rather than the Soundways domain,
+             so the brand doesn't change at the moment of conversion.
+             www + apex now serve this site from Netlify; book. still points at
+             Wix, which is why these are absolute URLs. Shares one calendar with
+             Soundways, so a slot booked here also blocks it there.
+             target="_top" is a no-op now that nothing is iframed; harmless. -->
         <div class="cta-actions">
-          <a class="btn btn-gold" href="https://www.infiniteinme.com/service-page/compassion-key-single-session" target="_top"><span class="btn-label">Book a single session</span><span class="btn-meta">1 hr 30 min · CA$140</span></a>
-          <a class="btn btn-line" href="https://www.infiniteinme.com/service-page/compassion-key-couples-or-family" target="_top"><span class="btn-label">Couples or family</span><span class="btn-meta">2 hr · CA$220</span></a>
+          <a class="btn btn-gold" href="https://book.infiniteinme.com/service-page/compassion-key-single-session" target="_top"><span class="btn-label">Book a single session</span><span class="btn-meta">90 min · CA$140</span></a>
+          <a class="btn btn-line" href="https://book.infiniteinme.com/service-page/compassion-key-couples-or-family" target="_top"><span class="btn-label">Couples or family</span><span class="btn-meta">2 hr · CA$220</span></a>
         </div>
         <p class="contact-lines">Not ready to book? <a href="mailto:shriramvivek@gmail.com?subject=Free%2015-minute%20fit%20call">Ask for a free 15-minute fit call</a> first — a short conversation to see if this is the right fit, no charge. Or <a href="mailto:shriramvivek@gmail.com?subject=Compassion%20Key%20session">email</a> · <a href="tel:+16473766687">call (647) 376-6687</a>.</p>
       </div>
