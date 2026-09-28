@@ -8,7 +8,7 @@
   --r-sm:4px; --r-md:10px; --r-lg:16px; --r-pill:999px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;overflow-x:clip}
 html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto}
 body{font-family:'Jost',system-ui,sans-serif;background:var(--night);color:var(--body);
   line-height:1.8;font-size:17px;font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden}
