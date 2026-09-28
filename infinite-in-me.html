@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Compassion Key Coaching | Infinite In Me</title>
 <meta name="description" content="Compassion Key coaching with Shri Vivek for fear, anxiety and old hurt. Online worldwide or in person in Mississauga. Belief optional.">
+<meta name="author" content="Shri Vivek">
+<meta name="theme-color" content="#FDFBF6">
 <link rel="canonical" href="https://infiniteinme.com/">
 <meta property="og:title" content="Compassion Key Coaching — Infinite In Me">
 <meta property="og:description" content="Compassion Key coaching with Shri Vivek for fear, anxiety and old hurt — online worldwide or in Mississauga.">
@@ -13,6 +15,9 @@
 <meta property="og:locale" content="en_CA">
 <meta property="og:image" content="https://infiniteinme.com/img/portrait_full.png">
 <meta property="og:image:alt" content="Shri Vivek, Compassion Key practitioner">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="420">
+<meta property="og:image:height" content="620">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Compassion Key Coaching — Infinite In Me">
 <meta name="twitter:description" content="Compassion Key coaching for fear, anxiety and old hurt. Online worldwide or in Mississauga.">
@@ -28,6 +33,8 @@
       "name": "Infinite In Me",
       "description": "Compassion Key coaching for anxiety, PTSD, fears, trauma and neurodivergent overwhelm. Online sessions worldwide and in Mississauga, Ontario.",
       "url": "https://infiniteinme.com/",
+      "image": "https://infiniteinme.com/img/portrait_full.png",
+      "mainEntityOfPage": { "@id": "https://infiniteinme.com/#webpage" },
       "email": "shriramvivek@gmail.com",
       "telephone": "+1-647-376-6687",
       "address": { "@type": "PostalAddress", "addressLocality": "Mississauga", "addressRegion": "ON", "addressCountry": "CA" },
@@ -53,6 +60,25 @@
       "jobTitle": "Certified Compassion Key Practitioner, Accredited Enneagram Practitioner, Therapeutic Life Coach",
       "url": "https://infiniteinme.com/",
       "sameAs": ["https://soundwaystohealth.com/"]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://infiniteinme.com/#webpage",
+      "url": "https://infiniteinme.com/",
+      "name": "Compassion Key Coaching | Infinite In Me",
+      "description": "Compassion Key coaching with Shri Vivek for fear, anxiety and old hurt. Online worldwide or in person in Mississauga.",
+      "inLanguage": "en-CA",
+      "isPartOf": { "@id": "https://infiniteinme.com/#website" },
+      "about": { "@id": "https://infiniteinme.com/#business" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://infiniteinme.com/#website",
+      "url": "https://infiniteinme.com/",
+      "name": "Infinite In Me",
+      "description": "Compassion Key coaching with Shri Vivek.",
+      "inLanguage": "en-CA",
+      "publisher": { "@id": "https://infiniteinme.com/#shri" }
     },
     {
       "@type": "FAQPage",
@@ -409,10 +435,10 @@
              which this audience checks early) as the secondary. The free fit
              call is the zero-risk entry for the hesitant reader. -->
         <div class="hero-actions" id="heroActions">
-          <a class="btn btn-gold" href="#how">How a session works</a>
-          <a class="btn btn-line" href="#book"><span class="btn-label">Book a session</span><span class="btn-meta">90 min · CA$140</span></a>
+          <a class="btn btn-gold" href="#how" data-analytics-event="how_session_works">How a session works</a>
+          <a class="btn btn-line" href="#book" data-analytics-event="book_session"><span class="btn-label">Book a session</span><span class="btn-meta">90 min · CA$140</span></a>
         </div>
-        <p class="hero-fit">Not sure yet? <a href="mailto:shriramvivek@gmail.com?subject=Free%2015-minute%20fit%20call">Ask for a free 15-minute fit call</a> — no charge, no commitment.</p>
+        <p class="hero-fit">Not sure yet? <a href="mailto:shriramvivek@gmail.com?subject=Free%2015-minute%20fit%20call" data-analytics-event="fit_call">Ask for a free 15-minute fit call</a> — no charge, no commitment.</p>
       </div>
       <div class="portrait" id="portrait">
         <span class="halo" aria-hidden="true"></span>
@@ -606,7 +632,7 @@
         <span class="kicker">Begin</span>
         <h2 id="book-heading">Come experience the magic<br>of the <em class="g">Compassion Key</em></h2>
         <p>One conversation is all it takes to know if this is your path. Sessions online worldwide, or in person in Mississauga.</p>
-        <form class="request-form" name="infinite-session-request" method="POST" data-netlify="true" netlify-honeypot="website">
+        <form class="request-form" name="infinite-session-request" method="POST" data-netlify="true" netlify-honeypot="website" data-analytics-form="session_request">
           <input type="hidden" name="form-name" value="infinite-session-request">
           <p hidden><label>Do not fill this out: <input name="website"></label></p>
           <div class="request-grid">
@@ -616,7 +642,7 @@
             <label>Preferred day or time<input name="preferred-time" placeholder="For example: weekday evenings"></label>
           </div>
           <label>Anything Shri should know<textarea name="note" placeholder="Optional"></textarea></label>
-          <button class="btn btn-gold" type="submit"><span class="btn-label">Request a session</span></button>
+          <button class="btn btn-gold" type="submit" data-analytics-event="request_session"><span class="btn-label">Request a session</span></button>
           <p class="request-note">Shri will reply directly to confirm availability and payment.</p>
         </form>
         <p class="contact-lines">Not ready to book? <a href="mailto:shriramvivek@gmail.com?subject=Free%2015-minute%20fit%20call">Ask for a free 15-minute fit call</a> first — a short conversation to see if this is the right fit, no charge. Or <a href="mailto:shriramvivek@gmail.com?subject=Compassion%20Key%20session">email</a> · <a href="tel:+16473766687">call (647) 376-6687</a>.</p>
@@ -684,6 +710,27 @@ onReady(()=>{
     reveal();
   });
 });
+
+// Privacy-safe analytics seam: emits local DOM events only. A consent-aware
+// integration can listen for these later; this page sets no cookies, sends no
+// network requests, and records no form values by itself.
+(function(){
+  function emit(name, detail){
+    window.dispatchEvent(new CustomEvent('infiniteinme:analytics',{
+      detail:Object.assign({name:name},detail||{})
+    }));
+  }
+  document.addEventListener('click',function(e){
+    var target=e.target.closest('[data-analytics-event]');
+    if(!target)return;
+    emit('cta_click',{cta:target.getAttribute('data-analytics-event'),surface:target.closest('section')?.id||'page'});
+  });
+  document.querySelectorAll('[data-analytics-form]').forEach(function(form){
+    form.addEventListener('submit',function(){
+      emit('form_submit',{form:form.getAttribute('data-analytics-form')});
+    });
+  });
+})();
 </script>
 </body>
 </html>

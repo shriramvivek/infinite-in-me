@@ -3,6 +3,22 @@ const embedded = (()=>{try{return window.self!==window.top}catch(e){return true}
 function onReady(fn){let done=false;const go=()=>{if(done)return;done=true;fn()};
   if(document.readyState==='complete')go();else addEventListener('load',go,{once:true});
   setTimeout(go,900)}
+// Optional analytics seam: emits local, non-identifying events only. No cookies,
+// network calls, URL/query-string data, or tracking IDs are used here. A future
+// consented analytics adapter can subscribe to window.dataLayer without changing
+// page markup or the interaction code below.
+window.dataLayer=window.dataLayer||[];
+function track(name,details){window.dataLayer.push(Object.assign({event:name},details||{}))}
+document.addEventListener('click',e=>{
+  const link=e.target.closest('a[href]');if(!link)return;
+  const href=link.getAttribute('href')||'';
+  if(href.includes('booking-form'))track('booking_cta_click',{page:location.pathname});
+  else if(href.startsWith('mailto:'))track('email_cta_click',{page:location.pathname});
+  else if(href.startsWith('tel:'))track('phone_cta_click',{page:location.pathname});
+},{passive:true});
+document.addEventListener('submit',e=>{
+  if(e.target.matches('form#booking-form'))track('booking_form_submit',{page:location.pathname});
+},{passive:true});
 // preloader
 onReady(()=>{const p=document.getElementById('pre');if(!p)return;
   const kill=()=>{p.classList.add('done');p.style.display='none'};
