@@ -104,7 +104,7 @@
     --ease-out:cubic-bezier(.2,.8,.2,1);
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
+  html{scroll-behavior:smooth;overflow-x:clip}
   html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto}
   body{font-family:'Jost',system-ui,sans-serif;background:var(--ivory);color:var(--body);
     line-height:1.65;font-size:17px;font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden}
@@ -251,7 +251,8 @@
 
   /* ABOUT */
   .split{display:grid;grid-template-columns:.9fr 1.1fr;gap:76px;align-items:center}
-  .split .media{position:relative}
+  .split>*{min-width:0}
+  .split .media{position:relative;width:100%;max-width:440px;margin:0 auto}
   .split .media .halo{position:absolute;top:-6%;left:-14%;right:-14%;bottom:-10%;z-index:0;background:radial-gradient(60% 55% at 50% 60%,rgba(217,180,94,.3),transparent 70%);filter:blur(26px)}
   .split .media .arc{position:absolute;top:2%;left:-4%;right:-4%;aspect-ratio:1;border:1px solid var(--line);border-radius:50%;z-index:0}
   .split .media img{position:relative;z-index:2;width:100%;max-width:440px;margin:0 auto;filter:drop-shadow(0 34px 54px rgba(28,24,18,.16))}
@@ -298,6 +299,13 @@
   .cta h2{font-size:clamp(38px,5.6vw,70px);font-weight:400;margin-bottom:18px}
   .cta p{max-width:560px;margin:0 auto 34px;font-size:18px}
   .cta-actions{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+  .request-form{max-width:720px;margin:34px auto 0;text-align:left}
+  .request-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .request-form label{display:block;color:var(--muted);font-size:12px;letter-spacing:.15em;text-transform:uppercase;margin-bottom:16px}
+  .request-form input,.request-form select,.request-form textarea{display:block;width:100%;margin-top:7px;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--ivory);color:var(--ink);font:inherit;font-size:16px;padding:13px 14px}
+  .request-form textarea{min-height:110px;resize:vertical}
+  .request-form .btn{margin:0 auto}
+  .request-note{text-align:center;color:var(--muted);font-size:13px!important;margin:16px auto 0!important}
   .cta .contact-lines{margin-top:28px;font-size:15px;color:var(--muted)}
   .cta .contact-lines a{color:var(--gold-deep)}
 
@@ -348,6 +356,7 @@
     .formula{gap:12px}
     .marq .track{gap:40px}
     .cta{padding:var(--sp-7) 22px}
+    .request-grid{grid-template-columns:1fr}
     blockquote{font-size:20px;padding-left:18px}
     .study{padding:28px 22px}
     .foot-links{gap:32px}
@@ -553,7 +562,7 @@
            footnote it was buried in. A-P1-2: full version now lives at
            /scope-of-practice.html; this stays as the on-page copy. -->
       <div class="not-for-you">
-        <p><strong>This isn't the right fit if:</strong> you're in acute crisis, experiencing active suicidal thoughts, or need a diagnosis. Coaching complements professional care — it doesn't replace it. If you're in crisis in Canada, call or text <strong>988</strong> (Talk Suicide Canada) any time, or call 911. Full details: <a href="scope-of-practice.html">scope of practice</a>.</p>
+        <p><strong>This isn't the right fit if:</strong> you're in acute crisis, experiencing active suicidal thoughts, or need a diagnosis. Coaching complements professional care — it doesn't replace it. If you're in crisis in Canada, call or text <strong>988</strong> (Talk Suicide Canada) any time, or call 911. Full details: <a href="https://soundwaystohealth.com/scope-of-practice.html">scope of practice</a>.</p>
       </div>
     </div>
   </section>
@@ -599,10 +608,19 @@
         <span class="kicker">Begin</span>
         <h2 id="book-heading">Come experience the magic<br>of the <em class="g">Compassion Key</em></h2>
         <p>One conversation is all it takes to know if this is your path. Sessions online worldwide, or in person in Mississauga.</p>
-        <div class="cta-actions">
-          <a class="btn btn-gold" href="mailto:shriramvivek@gmail.com?subject=Single%20Compassion%20Key%20session"><span class="btn-label">Request a single session</span><span class="btn-meta">90 min · CA$140</span></a>
-          <a class="btn btn-line" href="mailto:shriramvivek@gmail.com?subject=Couples%20or%20family%20Compassion%20Key%20session"><span class="btn-label">Request couples or family</span><span class="btn-meta">2 hr · CA$220</span></a>
-        </div>
+        <form class="request-form" name="infinite-session-request" method="POST" data-netlify="true" netlify-honeypot="website">
+          <input type="hidden" name="form-name" value="infinite-session-request">
+          <p hidden><label>Do not fill this out: <input name="website"></label></p>
+          <div class="request-grid">
+            <label>Your name<input name="name" autocomplete="name" required></label>
+            <label>Email<input name="email" type="email" autocomplete="email" required></label>
+            <label>Session<select name="session" required><option value="">Choose one</option><option>Single session — 90 min · CA$140</option><option>Couples or family — 2 hr · CA$220</option><option>Free 15-minute fit call</option><option>Not sure — please advise</option></select></label>
+            <label>Preferred day or time<input name="preferred-time" placeholder="For example: weekday evenings"></label>
+          </div>
+          <label>Anything Shri should know<textarea name="note" placeholder="Optional"></textarea></label>
+          <button class="btn btn-gold" type="submit"><span class="btn-label">Request a session</span></button>
+          <p class="request-note">Shri will reply directly to confirm availability and payment.</p>
+        </form>
         <p class="contact-lines">Not ready to book? <a href="mailto:shriramvivek@gmail.com?subject=Free%2015-minute%20fit%20call">Ask for a free 15-minute fit call</a> first — a short conversation to see if this is the right fit, no charge. Or <a href="mailto:shriramvivek@gmail.com?subject=Compassion%20Key%20session">email</a> · <a href="tel:+16473766687">call (647) 376-6687</a>.</p>
       </div>
     </div>
@@ -627,7 +645,7 @@
         <div class="foot-col"><h4>Explore</h4><a href="#method">The Method</a><a href="#how">How It Works</a><a href="#about">About Shri</a><a href="#science">Research</a><a href="#faq">FAQ</a></div>
         <div class="foot-col"><h4>Connect</h4><a href="#book">Book a session</a><a href="mailto:shriramvivek@gmail.com">shriramvivek@gmail.com</a><a href="tel:+16473766687">(647) 376-6687</a></div>
         <div class="foot-col"><h4>Also by Shri</h4><a href="https://soundwaystohealth.com/" rel="noopener">Soundways to Health</a></div>
-        <div class="foot-col"><h4>Legal</h4><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cancellation.html">Cancellation</a><a href="scope-of-practice.html">Scope of Practice</a></div>
+        <div class="foot-col"><h4>Legal</h4><a href="https://soundwaystohealth.com/privacy.html">Privacy</a><a href="https://soundwaystohealth.com/terms.html">Terms</a><a href="https://soundwaystohealth.com/cancellation.html">Cancellation</a><a href="https://soundwaystohealth.com/scope-of-practice.html">Scope of Practice</a></div>
       </div>
     </div>
     <p class="foot-disclaimer">Compassion Key coaching is a complementary wellbeing practice, not psychotherapy or medical care. If you're in crisis in Canada, call or text 988 (Talk Suicide Canada) any time, or call 911.</p>
