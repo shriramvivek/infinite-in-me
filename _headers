@@ -1,33 +1,19 @@
-# Netlify headers.
-# NOTE: do NOT add a blanket X-Frame-Options / frame-ancestors on /* — most
-# pages here are intentionally iframed by soundwaystohealth.com and
-# infiniteinme.com. The homepage (/ and /index.html) is the exception: it is
-# now served directly as the real domain root, not iframed, so it gets its
-# own frame-ancestors lock below. Netlify applies the more specific path's
-# header over the blanket /* one for the same header key.
-
 /*
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
-
-/
   X-Frame-Options: SAMEORIGIN
-  Content-Security-Policy: frame-ancestors 'self'
-/index.html
-  X-Frame-Options: SAMEORIGIN
-  Content-Security-Policy: frame-ancestors 'self'
+  Content-Security-Policy: frame-ancestors 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
 
-# HTML: always revalidate so edits go live immediately.
 /*.html
   Cache-Control: public, max-age=0, must-revalidate
 
-# Static assets: filenames are stable, so cache hard on repeat visits.
-/img/*
-  Cache-Control: public, max-age=604800
-/media/*
-  Cache-Control: public, max-age=604800
 /assets/*
-  Cache-Control: public, max-age=604800
-/frames/*
-  Cache-Control: public, max-age=604800
+  Cache-Control: public, max-age=604800, immutable
+
+/img/*
+  Cache-Control: public, max-age=604800, immutable
+
+/media/*
+  Cache-Control: public, max-age=604800, immutable
