@@ -60,7 +60,6 @@ function boot(skipIntro){
     document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();lenis.scrollTo(t,{offset:-60})}}))}
   if(window.gsap&&!reduce){
     window.__introStarted=true;
-    clearTimeout(failsafe);
     gsap.registerPlugin(ScrollTrigger);
     if(lenis)lenis.on('scroll',ScrollTrigger.update);
     if(!skipIntro&&document.getElementById('hero')){
