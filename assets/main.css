@@ -75,7 +75,6 @@ html.anim .eyebrow{opacity:0}
 .hero h1{font-size:clamp(40px,6.2vw,80px);line-height:1.08;font-weight:400;color:var(--ink);letter-spacing:.005em;margin-bottom:22px;text-shadow:0 4px 40px rgba(0,0,0,.5)}
 .hero h1 .ln{display:block;overflow:hidden}
 .hero h1 .ln span{display:inline-block}
-html.anim .hero h1 .ln span{transform:translateY(110%)}
 .hero h1 em{font-style:italic;background:linear-gradient(100deg,var(--amber-lt),var(--amber) 50%,var(--teal));-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero p.lede{max-width:640px;margin:0 auto 40px;font-size:clamp(17px,2.1vw,21px);color:rgba(243,238,228,.82);font-weight:300}
 html.anim .hero p.lede{opacity:0}

@@ -66,10 +66,11 @@ function boot(skipIntro){
     if(!skipIntro&&document.getElementById('hero')){
       const tl=gsap.timeline({delay:embedded?.1:.25});
       tl.to('#heroEyebrow',{opacity:1,y:0,duration:.8,ease:'power2.out'})
-        .to('.hero h1 .ln span',{yPercent:0,duration:1,ease:'power4.out',stagger:.12},'-=.4')
+        .fromTo('.hero h1 .ln span',{yPercent:110},{yPercent:0,duration:1,ease:'power4.out',stagger:.12,clearProps:'transform'},'-=.4')
         .to('#waveSvg',{opacity:1,duration:.8},'-=.4')
         .to('#heroLede',{opacity:1,y:0,duration:.8},'-=.5')
-        .to('#heroActions',{opacity:1,y:0,duration:.8},'-=.5');
+        .to('#heroActions',{opacity:1,y:0,duration:.8},'-=.5')
+        .call(revealAll);
       gsap.fromTo('#heroBg',{scale:1.14},{scale:1,duration:2.6,ease:'power2.out'});
     }
     if(document.getElementById('hero')){
