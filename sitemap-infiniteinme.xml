@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.infiniteinme.com/</loc>
+    <loc>https://infiniteinme.com/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.infiniteinme.com/scope-of-practice</loc>
+    <loc>https://infiniteinme.com/scope-of-practice</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.infiniteinme.com/privacy</loc>
+    <loc>https://infiniteinme.com/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://www.infiniteinme.com/terms</loc>
+    <loc>https://infiniteinme.com/terms</loc>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://www.infiniteinme.com/cancellation</loc>
+    <loc>https://infiniteinme.com/cancellation</loc>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
