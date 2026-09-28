@@ -10,10 +10,10 @@
   Cache-Control: public, max-age=0, must-revalidate
 
 /assets/*
-  Cache-Control: public, max-age=604800, immutable
+  Cache-Control: public, max-age=604800
 
 /img/*
-  Cache-Control: public, max-age=604800, immutable
+  Cache-Control: public, max-age=604800
 
 /media/*
-  Cache-Control: public, max-age=604800, immutable
+  Cache-Control: public, max-age=604800
