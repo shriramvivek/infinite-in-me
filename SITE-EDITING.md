@@ -29,6 +29,11 @@ Both sites use native Netlify Forms. Requests appear in each Netlify project's
 **Forms** section and trigger email notifications to `shriramvivek@gmail.com`.
 Never collect medical histories or payment information through these forms.
 
+Free 15-minute fit calls use Cal.com at
+`https://cal.com/shriramd/free-fit-call`. Cal.com handles availability,
+calendar events, confirmations, rescheduling, and cancellation. Session and
+home-visit requests stay in Netlify Forms for personal confirmation.
+
 ## Analytics
 
 The pages emit privacy-safe local conversion events without cookies or network

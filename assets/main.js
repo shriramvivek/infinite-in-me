@@ -12,7 +12,8 @@ function track(name,details){window.dataLayer.push(Object.assign({event:name},de
 document.addEventListener('click',e=>{
   const link=e.target.closest('a[href]');if(!link)return;
   const href=link.getAttribute('href')||'';
-  if(href.includes('booking-form'))track('booking_cta_click',{page:location.pathname});
+  if(link.dataset.bookingLink)track('fit_call_click',{page:location.pathname});
+  else if(href.includes('booking-form'))track('booking_cta_click',{page:location.pathname});
   else if(href.startsWith('mailto:'))track('email_cta_click',{page:location.pathname});
   else if(href.startsWith('tel:'))track('phone_cta_click',{page:location.pathname});
 },{passive:true});
